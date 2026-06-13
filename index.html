@@ -1,24 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-
-
-
-
-<div id="boasvindas">
-  <div class="mensagem">
-    <h2>Seja bem-vindo!</h2>
-    <p>Estamos felizes em receber você na IBEN.</p>
-    <button onclick="fechar()">Entrar no site</button>
-  </div>
-</div>
-
-
-
-
-
-
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IBEN</title>
@@ -26,14 +9,15 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media_querie.css">
     <script src="script.js" defer></script>
-</head>
+  </head>
 
 
 
 
 
-<div id="luz"></div>
+  <div id="luz"></div>
 
 
 
@@ -56,88 +40,61 @@ luz.style.top = e.clientY + "px";
 
 
 
-
-
-<header class="header"> 
-  
-  
-             <a href="#">
-                <img src="imagens/new.png" alt="IBEN" class="victor">
-            </a>
-
-            <nav class="header__nav">
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#cursos">programação</a></li>
-                    <li><a href="#igreja-Ibem">igreja Ibem</a></li>
-                    <li><a href="#contatos">contatos</a></li>
-                    
-
-                </div>
-
-
-                </ul>
-            </nav>
-
-     </header>
-
-
-
-
-
-
-    <div class="warapperConatiner warapperConatiner-dark wrapperContainer-relative">
-        <header class="header container">
-            <a href="#">
-                <img src="imagens/new.png" alt="IBEN" class="victor">
-            </a>
-
-            <nav class="header__nav">
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#cursos">programação</a></li>
-                    <li><a href="#igreja-Ibem">igreja Ibem</a></li>
-                    <li><a href="#contatos">contatos</a></li>
-                </div>
-
-
-                </ul>
-            </nav>
-
-     
-        </header>
-        
-
-
-
-
-
-
+<header class="header">
+    
+    <div class="logo">
+        <img src="imagens/ChatGPT Image 8_06_2026, 11_32_39.png" alt="IBEN">
     </div>
 
+    <nav class="menu">
+        <a href="#contador">Início</a>
+        <a href="#igreja">Nossa Igreja</a>
+        <a href="#agenda">Agenda</a>
+        <a href="#footer">Contato</a>
+    </nav>
+
+   
+
+</header>
 
 
-<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DWfKDLuAvWY/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" data-instgrm-version="14"></blockquote>
-
-<script async src="https://www.instagram.com/embed.js"></script>
+<div class="linha-preta67"></div>
 
 
 
 
-<!--
-    <div class="warapperConatiner wrapperConatianer-hero">
-        <section class="container heroBaner">
-            <div class="header__content">
-                <h1 class="title">ele vive</h1>
-               
-            </div>
-            
 
 
-        </section>
+
+
+
+
+
+  <section class="hero">
+    <video autoplay muted loop class="bg-video">
+      <source src="movie/TensorPix - WhatsApp Video 2026-04-03 at 13.mp4" type="video/mp4">
+    </video>
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+      <h1><span id="typing"></span></h1>
+      <p>Um lugar de fé, amor e transformação</p>
+
+      <div class="botoes">
+        <a href="#agenda" class="btn">Ver Agenda</a>
+        <a href="#oracao" class="btn-outline">Pedir Oração</a>
+      </div>
     </div>
-    -->
-    <div class="linha-preta">
+</section>
+
+
+
+
+
+
+
+<div class="linha-preta">
 
 
 
@@ -147,8 +104,8 @@ luz.style.top = e.clientY + "px";
 
 
 
-        <article class="cursos__cards" class='card2'>
-            <!-- <img src="imagens/forja-cards.png" alt="homens se reuni">
+  <article class="cursos__cards" class='card2'>
+    <!-- <img src="imagens/forja-cards.png" alt="homens se reuni">
                     <div class="cursos_cards_content"> 
                         <h3>A Forja - para homens</h3>
                         <p>
@@ -158,9 +115,9 @@ luz.style.top = e.clientY + "px";
                             mesmo aplicações para aparelhos celulares
                         </p>
                     </div> -->
-        </article>
+  </article>
 
-        <!--article class="cursos__cards">
+  <!--article class="cursos__cards">
                     <img src="imagens/culto-quarta.png" alt="reunioes-as-quartas-feiras">
                     <div class="cursos_cards_content">
                         <h3>Reuniões as quartas-feiras</h3>
@@ -173,61 +130,55 @@ luz.style.top = e.clientY + "px";
                 </article> -->
 
 
-        </div>
-        <!-- <a href="#" class="btn spance_btn">Ver mais Cursos</a> -->
-    </section>
-    </div>
-
-    <div class="linha-preta2"></div>
-
-
-    <section class="glass-section">
-  <div class="glass-box">
-    <h2>Nossa Igreja</h2>
-    <p>Confie no Senhor de todo o seu coração.</p>
-  </div>
+</div>
+<!-- <a href="#" class="btn spance_btn">Ver mais Cursos</a> -->
 </section>
-<!--
-    <div class="warapperConatiner wrapperContainer-dark2 wrapperContainer-padded" id="igreja-Ibem">
-        <section class="container escola">
-            <img src="imagens/Mask group (1).svg" alt="joven-estudante">
-            <div class="school__content">
-                <h2 class="school__title">nossa igreja</h2>
+  
 
-                <p>Aprenda habilidades tecnológicas em demanda e alcance seus objetivos de carreira com a nossa escola
-                    de tecnologia
-                    online. Oferecemos uma ampla gama de cursos online, desde programação e desenvolvimento de software
-                    até design
-                    gráfico e análise de dados. Nossos instrutores experientes fornecerão a você um ambiente de
-                    aprendizado
-                    interativo e
-                    de suporte para ajudá-lo a adquirir as habilidades necessárias para ter sucesso em sua carreira.
-                    Inscreva-se
-                    agora e
-                    comece sua jornada para se tornar um profissional de tecnologia bem-sucedido.
-                </p>
-            </div>
+  <div class="linha-preta2"></div>
 
-        </section>
-    </div> -->
+
+
+  <section class="igreja" id="igreja">
+    <div class="texto">
+        <span>NOSSA IGREJA</span>
+        <h2>
+            Levando o Reino de Deus a cada família,
+            formando discípulos e transformando vidas.
+        </h2>
+
+        <p>
+           A IBEN Igreja Batista no Engenho Novo é uma comunidade cristã comprometida em anunciar o evangelho de Jesus Cristo, formar discípulos e servir à sociedade com amor e dedicação. Nossa igreja nasceu com o propósito de ser um lugar onde pessoas e famílias possam encontrar esperança, restauração e crescimento espiritual através da Palavra de Deus.
+
+Acreditamos que a igreja é mais do que um prédio ou uma reunião semanal; somos uma família unida pela fé, caminhando juntos em direção ao propósito que Deus tem para cada vida. Por isso, valorizamos a comunhão, o cuidado mútuo, o discipulado e o serviço ao próximo, criando um ambiente acolhedor para crianças, jovens, adultos e idosos.
+
+Em nossos cultos, buscamos adorar a Deus com excelência, ensinar as Escrituras de forma clara e proporcionar experiências que fortaleçam a fé e aproximem as pessoas de Cristo. Além disso, desenvolvemos ministérios e atividades voltados para o crescimento espiritual, o fortalecimento das famílias e o impacto positivo em nossa comunidade.
+
+Nossa missão é levar a mensagem de salvação a todos, demonstrando o amor de Deus por meio de atitudes práticas e de uma vida transformada pelo evangelho. Queremos ser uma igreja relevante para a sociedade, sem abrir mão dos princípios bíblicos que fundamentam nossa fé.
+
+Se você está procurando um lugar para conhecer mais sobre Deus, construir amizades sinceras, desenvolver seus dons e viver uma caminhada cristã autêntica, a IBEN tem as portas abertas para receber você e sua família. Aqui, cada pessoa é importante e tem a oportunidade de crescer, servir e fazer parte daquilo que Deus está realizando em nossa geração.
+        </p>
+
+      
+    </div>
+</section>
+
 
 
 </div>
-<section class="mapa">
-  <h2>Onde Estamos</h2>
+  <section class="mapa">
+    <h2>Onde Estamos</h2>
 
-  <div class="mapa-card">
-    <iframe 
-      src="https://www.google.com/maps?q=Barueri&output=embed"
-      loading="lazy">
-    </iframe>
+    <div class="mapa-card">
+      <iframe src="https://www.google.com/maps?q=Barueri&output=embed" loading="lazy">
+      </iframe>
 
-    <div class="info">
-      <h3>Igreja Batista IBEN</h3>
-      <p>📍 Barueri - SP</p>
-      <button onclick="abrirMapa()">Ver no Google Maps</button>
+      <div class="info">
+        <h3>Igreja Batista IBEN</h3>
+        <p>📍 Barueri - SP</p>
+        <button onclick="abrirMapa()">Ver no Google Maps</button>
+      </div>
     </div>
-  </div>
 </section>
 
 
@@ -254,7 +205,7 @@ luz.style.top = e.clientY + "px";
 
 
 
-</body>
+
 
 
 
@@ -275,24 +226,135 @@ luz.style.top = e.clientY + "px";
 <section class="oracao">
   <h2>Pedido de Oração</h2>
 
-  <div class="oracao-card">
-    <input type="text" placeholder="Seu nome" required>
-    <textarea placeholder="Digite seu pedido de oração..." required></textarea>
-    <button>Enviar Pedido</button>
+  <div class="oracao-box">
+    <form action="https://formsubmit.co/osmarmacielandrade@gmail.com" method="POST">
+
+      <input type="text" name="nome" placeholder="Seu nome (opcional)">
+
+      <textarea name="pedido" placeholder="Digite seu pedido de oração..." required></textarea>
+
+      <button type="submit">Enviar Pedido 🙏</button>
+
+      <!-- CONFIG -->
+      <input type="hidden" name="_subject" value="Novo pedido de oração!">
+      <input type="hidden" name="_captcha" value="false">
+
+    </form>
   </div>
+</section>
+<div class="linha-preta6"></div>
+
+
+
+<section class="agenda-section" id="agenda">
+
+    <h2 class="agenda-titulo">Agenda Semanal</h2>
+
+    <div class="agenda-grid">
+
+        <div class="evento-card">
+            <img src="imagens/intercersao.png" alt="IBEN">
+            <div class="evento-info">
+                <h3>Segunda-feira</h3>
+                <p>Intercessão</p>
+                <span>19:00</span>
+            </div>
+        </div>
+
+        <div class="evento-card">
+            <img src="imagens/forja-cards.png" alt="IBEN">
+            <div class="evento-info">
+                <h3>Terça-feira</h3>
+                <p>A Forja</p>
+                <span>19:30</span>
+            </div>
+        </div>
+
+        <div class="evento-card">
+            <img src="imagens/culto-quarta.png" alt="IBEN">
+            <div class="evento-info">
+                <h3>Quarta-feira</h3>
+                <p>Culto de Oração</p>
+                <span>20:00</span>
+            </div>
+        </div>
+
+        <div class="evento-card destaque">
+            <img src="imagens/635106097_17845787499690906_3624433083799248194_n.jpg" alt="">
+            <div class="evento-info">
+                <h3>Sábado</h3>
+                <p>Celula de jovems</p>
+                <span>19:00</span>
+            </div>
+        </div>
+
+        <div class="evento-card destaque">
+            <img src="imagens/culto-quarta.png" alt="">
+            <div class="evento-info">
+                <h3>domingo</h3>
+                <p>EBD e culto de noite</p>
+                <span>19:00</span>
+            </div>
+        </div>
+
+        <div class="evento-card destaque">
+            <img src="imagens/WhatsApp Image 2026-06-09 at 11.27.39 AM.jpeg" alt="">
+            <div class="evento-info">
+                <h3>?</h3>
+                <p>Culto dos Adolescentes TEMA: Envolvidos ou Comprometidos</p>
+                <span>19:00</span>
+            </div>
+        </div>
+
+
+
+    </div>
+
 </section>
 
 
 
-<div class="warapperConatiner wrapperContainer-dark">
-    <footer>
-        <span> Desenvolvido por:</span>
-        <a href="https://www.linkedin.com/in/osmar-maciel-de-andrade-654812326/" target="_blank">Osmar Andrade e Victor
-            hugo
 
-        </a>
 
-    </footer>
-</div>
+
+
+
+<section class="cards">
+
+
+  <div class="card">
+    <img src="imagens/novo.png">
+    <div class="overlay">
+      <h2>Nossa igreja</h2>
+      <p>Venha nos conhecer</p>
+      <a href="#igreja" class="btn-outline">Ver</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="imagens/logo-iben-adm-victor">
+    <div class="overlay">
+      <h2>Eventos</h2>
+      <p>Quer descobrir oque vem de especial do nosso senhor?</p>
+      <a href="#agenda" class="btn-outline">Ver</a>
+    </div>
+  </div>
+
+</section>
+
+
+
+
+
+
+<footer class="footer" id="footer">
+  <p class="texto">
+    Desenvolvido por
+    <span class="nome">Osmar Andrade</span> •
+    <span class="nome">Victor Hugo</span> •
+    <span class="nome">Felipe Salatiel</span>
+  </p>
+</footer>
+
 
 </html>

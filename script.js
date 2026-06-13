@@ -71,3 +71,109 @@ window.addEventListener('scroll', () => {
 });
 
 
+const frases = [
+  "Bem-vindo à nossa igreja",
+  "Jesus te ama",
+  "Venha nos visitar"
+];
+
+let i = 0;
+let j = 0;
+let atual = "";
+let apagando = false;
+
+function escrever() {
+  document.getElementById("typing").innerHTML = atual;
+
+  if (!apagando && j < frases[i].length) {
+    atual += frases[i][j];
+    j++;
+  } else if (apagando && j > 0) {
+    atual = atual.slice(0, -1);
+    j--;
+  }
+
+  if (j === frases[i].length) apagando = true;
+  if (j === 0 && apagando) {
+    apagando = false;
+    i = (i + 1) % frases.length;
+  }
+
+  setTimeout(escrever, apagando ? 50 : 100);
+}
+
+escrever();
+
+
+
+
+
+
+
+
+
+
+
+
+const cards = document.querySelectorAll('.card');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.style.opacity = "1";
+      entry.target.style.transform = "translateY(0)";
+    }
+  });
+});
+
+cards.forEach(card => {
+  card.style.opacity = "0";
+  card.style.transform = "translateY(50px)";
+  card.style.transition = "0.5s";
+
+  observer.observe(card);
+});
+
+function abrirModal(titulo, descricao) {
+  document.getElementById('modal').style.display = 'flex';
+  document.getElementById('titulo').innerText = titulo;
+  document.getElementById('descricao').innerText = descricao;
+}
+
+function fecharModal() {
+  document.getElementById('modal').style.display = 'none';
+}
+
+
+
+
+
+
+
+const contadores = document.querySelectorAll(".contador");
+
+contadores.forEach(contador=>{
+
+let alvo = +contador.dataset.numero;
+let numero = 0;
+
+const atualizar = ()=>{
+
+numero += Math.ceil(alvo/100);
+
+if(numero < alvo){
+
+contador.innerText = numero;
+requestAnimationFrame(atualizar);
+
+}else{
+
+contador.innerText = alvo + "+";
+
+}
+
+};
+
+atualizar();
+
+});
